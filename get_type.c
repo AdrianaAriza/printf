@@ -17,6 +17,7 @@ int (*get_type(char *s))(va_list arguments, char *buffer, int i_b)
 		{"r", p_reverse},
 		{"R", p_rot13},
 		{"%", p_percent},
+		{"u", p_unumber},
 		{NULL, NULL}
 	};
 	int i;
