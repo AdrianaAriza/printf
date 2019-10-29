@@ -18,6 +18,8 @@ int (*get_type(char *s))(va_list arguments, char *buffer, int i_b)
 		{"R", p_rot13},
 		{"%", p_percent},
 		{"u", p_unumber},
+		{"x", p_hexa},
+		{"X", p_Hexad},
 		{NULL, NULL}
 	};
 	int i;
