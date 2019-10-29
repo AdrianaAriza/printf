@@ -15,6 +15,8 @@ int p_unumber(va_list arguments, char *buffer, int i_b)
 	m = va_arg(arguments, int);
 	if (m < 0)
 		n = aux + m;
+	else
+		n = m;
 	while (n / b > 9)
 	{
 		b = b * 10;
