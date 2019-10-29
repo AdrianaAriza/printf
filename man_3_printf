@@ -1,0 +1,61 @@
+TH man 1 "30 October 2019" "0.01" "_printf man page"
+.SH NAME
+.B _printf
+- _printf is a custom C language function to do formatted printing.
+.SH SYNOPSIS
+int _printf(const char *format, ...);
+.SH DESCRIPTION
+The _printf function writes output to
+.I stdout
+produced according to
+.I formats
+as described below.
+.br
+
+.B Return value
+.br
+.RS 3
+
+On succeful output, 
+.B _printf 
+should print in stdout the number of characters passed trhough prototype and their arguments (excluding the null byte used to end output to strings).
+.RE
+
+.B Format Specifications
+
+.br
+.RS 3
+For this cutted version _printf is capable to identify 5 different format specificators:
+.TP
+.B c, s, d, i, %
+
+
+.B %
+For indentify the type of format to use as output
+.B _printf 
+detect on the string of the first argument the "%" character and evaluates the inmediate next character.
+(when _printf does not match any format specificator it should print the character % as part of the string).
+
+
+.B i
+and
+.B d
+The \fIint\fR argument is not converted and is printed as a decimal (base 10) number
+
+.B c
+The \fIint\fR argument is converted to an \fIunsigned char\fR, and the
+resulting character is written.
+.LP
+.TP
+.B s
+The \fIconst-char *\fR argument is expected to be a pointer to an array
+of character type (pointer to a string). Characters from the array are
+written up to (but not including) a terminating null byte ('\\0').
+.LP
+.TP
+.LP
+.RE
+.SH AUTHORS
+Adriana Ariza - https://github.com/AdrianaAriza
+
+Juan Pablo Zuluaga - https://github.com/juanzuluaga91
