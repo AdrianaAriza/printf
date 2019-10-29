@@ -17,12 +17,7 @@ int p_rot13(va_list arguments, char *buffer, int i_b)
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	if (!p)
-	{
-		p = "(null)";
-		for (i = 0; p[i]; i++, i_b++)
-			buffer[i_b] = p[i];
-		return (i_b);
-	}
+		p = "(ahyy)";
 	i = 0;
 	while (p[i])
 	{
@@ -32,6 +27,12 @@ int p_rot13(va_list arguments, char *buffer, int i_b)
 			if (p[i] == alpha[j])
 			{
 				buffer[i_b] = rot13[j];
+				i_b++;
+				break;
+			}
+			if (p[i] < 65 || (p[i] > 90 && p[i] < 97) || p[i] > 122)
+			{
+				buffer[i_b] = p[i];
 				i_b++;
 				break;
 			}

@@ -21,7 +21,6 @@ int print_number(int n, char *buffer, int i_b);
 int _strlen(char *string);
 int _putchar(char c);
 char *print_binary(int n);
-char *rot13(char *p);
 
 /**
  * struct t_input - Struct t_input
