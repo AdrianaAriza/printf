@@ -20,7 +20,7 @@ int p_reverse(va_list arguments, char *buffer, int i_b)
 			buffer[i_b] = ptr[n];
 		return (i_b);
 	}
-	n = _strlen(ptr);
+	n = _strlen(ptr) - 1;
 	while (n >= 0)
 	{
 		buffer[i_b] = ptr[n];
