@@ -23,7 +23,7 @@ Include this function from local library:
 
 
 ## Usage
-| conversion specifier  | Type of data |
+| Conversion Specificator  | Action |
 | ------------- | ------------- |
 | **%**  | % For indentify the type of format to use as output|
 | **s**  | String  |
