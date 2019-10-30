@@ -26,7 +26,7 @@ Include this function from local library:
 | Conversion Specificator  | Action |
 | ------------- | ------------- |
 | **%**  | % For indentify the type of format to use as output|
-| **s**  | String  |
+| **s**  | Print a string except for the terminating NULL byte  |
 | **c**  | Print a Character  |
 | **i**  | Print a decimal (base 10) number  |
 | **d**  | Print a decimal (base 10) number  |
