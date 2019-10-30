@@ -15,7 +15,8 @@ int p_Hexad(va_list arguments, char *buffer, int i_b)
 	char hexadecimal[100];
 
 	decimal = va_arg(arguments, int);
-
+	if (decimal == 0)
+		hexadecimal[j++] = 48;
 	while (decimal)
 	{
 		remainder = decimal % 16;

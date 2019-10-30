@@ -15,7 +15,8 @@ int p_octal(va_list arguments, char *buffer, int i_b)
 	char octal[100];
 
 	decimal = va_arg(arguments, int);
-
+	if (decimal == 0)
+		octal[j++] = 48;
 	while (decimal)
 	{
 		remainder = decimal % 8;
