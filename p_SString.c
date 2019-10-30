@@ -17,7 +17,7 @@ int p_Sstring(va_list arguments, char *buffer, int i_b)
 		ptr = NULL;
 	for (; ptr[i]; i++)
 	{
-		if (ptr[i] >= 32 || ptr[i] >= 127)
+		if (ptr[i] >= 32 && ptr[i] < 127)
 			buffer[i_b] = ptr[i], i_b++;
 		else
 		{
