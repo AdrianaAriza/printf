@@ -11,10 +11,10 @@
 
 int p_hexa(va_list arguments, char *buffer, int i_b)
 {
-	long decimal, remainder, i, j = 0;
+	unsigned int decimal, remainder, i, j = 0;
 	char hexadecimal[100];
 
-	decimal = va_arg(arguments, long);
+	decimal = va_arg(arguments, unsigned int);
 	if (decimal == 0)
 		hexadecimal[j++] = 48;
 	while (decimal)
