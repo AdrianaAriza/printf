@@ -11,11 +11,11 @@
 
 int p_point(va_list arguments, char *buffer, int i_b)
 {
-	unsigned int decimal, remainder, i, j = 0;
+	long decimal, remainder, i, j = 0;
 	char hexadecimal[100];
 	char *p = "(nil)";
 
-	decimal = va_arg(arguments, unsigned int);
+	decimal = va_arg(arguments, long);
 	if (decimal == 0)
 	{
 		for (; p[j]; j++, i_b++)
