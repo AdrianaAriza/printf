@@ -11,10 +11,10 @@
 
 int p_octal(va_list arguments, char *buffer, int i_b)
 {
-	int decimal, remainder, i, j = 0;
+	long decimal, remainder, i, j = 0;
 	char octal[100];
 
-	decimal = va_arg(arguments, int);
+	decimal = va_arg(arguments, long);
 	if (decimal == 0)
 		octal[j++] = 48;
 	while (decimal)
