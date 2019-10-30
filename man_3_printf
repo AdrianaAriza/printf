@@ -21,13 +21,13 @@ On succeful output,
 should print in stdout the number of characters passed trhough prototype and their arguments (excluding the null byte used to end output to strings).
 .RE
 
-.B Format Specifications
+.B Format Specificators
 
 .br
 .RS 3
-For this cutted version _printf is capable to identify 5 different format specificators:
+For this cutted version _printf is capable to identify different format specificators like:
 .TP
-.B c, s, d, i, %
+.B c, s, d, i, %, u, o, x, X, R, r, b.
 
 
 .B %
@@ -42,15 +42,51 @@ and
 .B d
 The \fIint\fR argument is not converted and is printed as a decimal (base 10) number
 
+
 .B c
 The \fIint\fR argument is converted to an \fIunsigned char\fR, and the
 resulting character is written.
 .LP
 .TP
+
 .B s
 The \fIconst-char *\fR argument is expected to be a pointer to an array
 of character type (pointer to a string). Characters from the array are
 written up to (but not including) a terminating null byte ('\\0').
+.LP
+.TP
+.B u 
+Print an unsigned decimal (base 10) number.
+.LP
+.TP
+.B o
+Print a number in octal (base 8).
+.LP
+.TP
+.B x
+print a number in hexidecimal (base 16) in lowercase.
+.LP
+.TP
+.B X
+print a number in hexidecimal (base 16) in uppercase.
+.LP
+.TP
+.B R
+Convert a text/string accord to ROT13 encripting.
+.LP
+.TP
+.B r
+reverse a string.
+.LP
+.TP
+.B b
+print a number in binary.
+.LP
+.TP
+.B p
+print the address of pointer or any other variable.
+.LP
+.TP
 .LP
 .TP
 .LP
