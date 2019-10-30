@@ -21,6 +21,7 @@ int (*get_type(char *s))(va_list arguments, char *buffer, int i_b)
 		{"x", p_hexa},
 		{"X", p_Hexad},
 		{"o", p_octal},
+		{"p", p_point},
 		{NULL, NULL}
 	};
 	int i;

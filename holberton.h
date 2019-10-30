@@ -25,6 +25,7 @@ char *print_binary(int n);
 int p_hexa(va_list arguments, char *buffer, int i_b);
 int p_Hexad(va_list arguments, char *buffer, int i_b);
 int p_octal(va_list arguments, char *buffer, int i_b);
+int p_point(va_list arguments, char *buffer, int i_b);
 
 /**
  * struct t_input - Struct t_input
